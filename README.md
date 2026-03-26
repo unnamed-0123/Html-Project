@@ -22,7 +22,7 @@ body {
 
 /* HEADER */
 header {
-    background: #333;
+    background: grey;
     color: white;
     padding: 15px;
 }
@@ -47,7 +47,7 @@ header {
 
 /* HERO */
 .hero {
-    background: rgba(0, 81, 255, 0.712);
+    background: lightblue;
     color: white;
     padding: 40px;
     text-align: center;
@@ -118,7 +118,7 @@ header {
 
 /* FOOTER */
 footer {
-    background: #333;
+    background: grey;
     color: white;
     text-align: center;
     padding: 15px;
