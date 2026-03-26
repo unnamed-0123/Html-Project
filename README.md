@@ -47,7 +47,7 @@ header {
 
 /* HERO */
 .hero {
-    background: #4CAF50;
+    background: rgba(0, 81, 255, 0.712);
     color: white;
     padding: 40px;
     text-align: center;
