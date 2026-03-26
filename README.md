@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -22,12 +22,12 @@ body {
 
 /* HEADER */
 header {
-    background: grey;
+    background: #333;
     color: white;
     padding: 15px;
 }
 
-/* Flexbox Navigation */
+/* Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,7 @@ header {
 
 /* HERO */
 .hero {
-    background: rgba(0, 132, 255, 0.438);
+    background: #4CAF50;
     color: white;
     padding: 40px;
     text-align: center;
@@ -71,17 +71,14 @@ header {
     gap: 15px;
 }
 
-/* Gallery Boxes */
 .gallery-item {
     background: #ddd;
     padding: 40px;
     text-align: center;
-
-    /* Mobile: 1 column */
     flex: 100%;
 }
 
-/* TABLET: 2 columns */
+/* TABLET */
 @media (min-width: 600px) {
 
 .gallery-item {
@@ -90,7 +87,7 @@ header {
 
 }
 
-/* DESKTOP: 3 columns */
+/* DESKTOP */
 @media (min-width: 900px) {
 
 .gallery-item {
@@ -99,9 +96,29 @@ header {
 
 }
 
+/* MOBILE NAVIGATION FIX */
+@media (max-width: 500px) {
+
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav-links a {
+    padding: 8px 0;
+}
+
+}
+
 /* FOOTER */
 footer {
-    background: grey;
+    background: #333;
     color: white;
     text-align: center;
     padding: 15px;
@@ -121,10 +138,10 @@ footer {
 <h2>My Website</h2>
 
 <div class="nav-links">
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Gallery</a>
-<a href="#">Contact</a>
+<a href="#hero">Home</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#footer">Contact</a>
 </div>
 
 </div>
@@ -132,7 +149,7 @@ footer {
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section id="hero" class="hero">
 
 <h1>Welcome to My Website</h1>
 
@@ -141,7 +158,7 @@ footer {
 </section>
 
 <!-- ABOUT -->
-<section class="about">
+<section id="about" class="about">
 
 <h2>About Me</h2>
 
@@ -152,16 +169,14 @@ This webpage uses Flexbox and works on mobile, tablet, and desktop screens.
 </section>
 
 <!-- GALLERY -->
-<section class="gallery">
+<section id="gallery" class="gallery">
 
 <h2>My Projects</h2>
 
 <div class="gallery-container">
 
 <div class="gallery-item">Project 1</div>
-
 <div class="gallery-item">Project 2</div>
-
 <div class="gallery-item">Project 3</div>
 
 </div>
@@ -169,7 +184,7 @@ This webpage uses Flexbox and works on mobile, tablet, and desktop screens.
 </section>
 
 <!-- FOOTER -->
-<footer>
+<footer id="footer">
 
 <p>© 2026 My Website</p>
 
